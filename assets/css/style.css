@@ -1,0 +1,78 @@
+/* assets/css/style.css */
+:root {
+  --primary: #1a56a7;
+  --secondary: #1e3a5f;
+  --accent: #f59e0b;
+  --success: #16a34a;
+  --danger: #dc2626;
+}
+
+body { background: #f1f5f9; font-family: 'Segoe UI', Arial, sans-serif; min-height: 100vh; display: flex; flex-direction: column; }
+main { flex: 1; }
+
+/* PAGE HERO */
+.page-hero {
+  background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
+  color: white; border-radius: 12px; padding: 24px 28px; margin-bottom: 24px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+.page-hero h2 { margin: 0; font-weight: 700; font-size: 1.5rem; }
+.page-hero p { margin: 4px 0 0; opacity: 0.85; font-size: 0.9rem; }
+
+/* CARDS */
+.card { border: none; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+.card-header { border-radius: 12px 12px 0 0 !important; font-weight: 600; }
+
+/* STAT CARDS */
+.stat-card { border-left: 4px solid var(--primary); transition: transform 0.2s; }
+.stat-card:hover { transform: translateY(-3px); }
+.stat-card .stat-number { font-size: 2rem; font-weight: 700; color: var(--primary); }
+.stat-card .stat-label { color: #64748b; font-size: 0.85rem; }
+
+/* TABLES */
+.table-container { border-radius: 12px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.08); background: white; }
+.table thead th { background: var(--secondary); color: white; font-weight: 600; border: none; white-space: nowrap; }
+.table tbody tr:hover { background: #f0f7ff; }
+.table td, .table th { vertical-align: middle; padding: 10px 14px; }
+
+/* MODALS */
+.modal-header { background: linear-gradient(135deg, var(--secondary), var(--primary)); color: white; border-radius: 12px 12px 0 0; }
+.modal-header .btn-close { filter: brightness(0) invert(1); }
+.modal-content { border-radius: 12px; border: none; }
+
+/* BADGES */
+.badge-estado { padding: 5px 10px; border-radius: 20px; font-size: 0.78rem; font-weight: 600; }
+
+/* BUTTONS */
+.btn-primary { background: var(--primary); border-color: var(--primary); }
+.btn-primary:hover { background: var(--secondary); border-color: var(--secondary); }
+.action-btns .btn { padding: 3px 8px; font-size: 0.8rem; margin: 0 1px; }
+
+/* LOGIN PAGE */
+.login-wrapper { min-height: 100vh; background: linear-gradient(135deg, #1e3a5f 0%, #1a56a7 50%, #0ea5e9 100%); display: flex; align-items: center; justify-content: center; }
+.login-card { max-width: 420px; width: 100%; border-radius: 16px; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.3); }
+.login-header { background: rgba(255,255,255,0.1); padding: 32px 32px 24px; text-align: center; color: white; }
+.login-header .logo-icon { font-size: 3rem; margin-bottom: 12px; }
+.login-body { background: white; padding: 32px; }
+
+/* INDEX PAGE */
+.index-hero { min-height: 100vh; background: linear-gradient(135deg, #1e3a5f 0%, #1a56a7 60%, #0284c7 100%); display: flex; flex-direction: column; }
+.hero-content { flex: 1; display: flex; align-items: center; justify-content: center; text-align: center; color: white; padding: 40px 20px; }
+.feature-card { background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; padding: 24px; color: white; transition: background 0.2s; }
+.feature-card:hover { background: rgba(255,255,255,0.2); }
+
+/* ALERTS */
+.alert { border-radius: 10px; }
+
+/* FORM */
+.form-label { font-weight: 600; color: #374151; font-size: 0.9rem; }
+.form-control:focus, .form-select:focus { border-color: var(--primary); box-shadow: 0 0 0 3px rgba(26,86,167,0.15); }
+
+/* NAVBAR */
+.navbar-nav .nav-link.active { background: rgba(255,255,255,0.2); border-radius: 6px; }
+.nav-link { border-radius: 6px; margin: 0 2px; transition: background 0.2s; }
+.nav-link:hover { background: rgba(255,255,255,0.15); }
+
+/* MICROSERVICIO */
+.api-request { background: #1e293b; color: #e2e8f0; border-radius: 8px; padding: 16px; font-family: monospace; font-size: 0.85rem; }
+.api-response { background: #0f172a; color: #4ade80; border-radius: 8px; padding: 16px; font-family: monospace; font-size: 0.82rem; max-height: 300px; overflow-y: auto; }
